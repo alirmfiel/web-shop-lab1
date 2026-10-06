@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Корзина</title>
+    <title>Оформление заказа</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,36 +13,13 @@
 <body>
 
 <header>
-    <h1>Корзина</h1>
-    <a href="index.html">Вернуться в каталог</a>
+    <h1>Оформление заказа</h1>
+    <a href="cart.html">Вернуться в корзину</a>
 </header>
 
 <main>
 
-    <section class="cart">
-
-        <div class="cart-items">
-            <p>Корзина пуста</p>
-        </div>
-
-        <p class="cart-total">
-            Итого: <span>0 ₽</span>
-        </p>
-
-        <a href="checkout.html" class="checkout-button">
-            Оформить заказ
-        </a>
-
-    </section>
-
-</main>
-
-<div class="modal" id="checkout-modal">
-    <div class="modal-content">
-
-        <button type="button" class="modal-close">×</button>
-
-        <h2>Оформление заказа</h2>
+    <section class="checkout">
 
         <form id="checkout-form">
 
@@ -74,10 +51,11 @@
 
         <p class="order-message"></p>
 
-    </div>
-</div>
+    </section>
 
-<script src="js/cart.js"></script>
+</main>
+
+<script src="js/checkout.js"></script>
 
 </body>
 </html>

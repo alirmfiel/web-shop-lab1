@@ -249,3 +249,152 @@ header a:hover {
 .quantity button:hover {
     background-color: #ddd;
 }
+
+.checkout-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.modal-content h2 {
+    margin-bottom: 24px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#checkout-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: bold;
+}
+
+#checkout-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.create-order-button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-order-button:hover {
+    background-color: #333;
+}
+
+.order-message {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#checkout-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: bold;
+}
+
+#checkout-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.create-order-button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-order-button:hover {
+    background-color: #333;
+}
+
+.order-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
