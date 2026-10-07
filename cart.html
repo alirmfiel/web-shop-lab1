@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Корзина</title>
+    <title>Корзина — Seoul Routine</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,13 +13,19 @@
 <body>
 
 <header>
-    <h1>Корзина</h1>
+    <div class="brand">
+        <h1>Seoul Routine</h1>
+        <p>korean skincare</p>
+    </div>
+
     <a href="index.html">Вернуться в каталог</a>
 </header>
 
 <main>
 
     <section class="cart">
+
+        <h2>Корзина</h2>
 
         <div class="cart-items">
             <p>Корзина пуста</p>
@@ -37,45 +43,9 @@
 
 </main>
 
-<div class="modal" id="checkout-modal">
-    <div class="modal-content">
-
-        <button type="button" class="modal-close">×</button>
-
-        <h2>Оформление заказа</h2>
-
-        <form id="checkout-form">
-
-            <label>
-                Имя
-                <input type="text" name="firstName" required>
-            </label>
-
-            <label>
-                Фамилия
-                <input type="text" name="lastName" required>
-            </label>
-
-            <label>
-                Адрес доставки
-                <input type="text" name="address" required>
-            </label>
-
-            <label>
-                Номер телефона
-                <input type="tel" name="phone" required>
-            </label>
-
-            <button type="submit" class="create-order-button">
-                Создать заказ
-            </button>
-
-        </form>
-
-        <p class="order-message"></p>
-
-    </div>
-</div>
+<footer>
+    <p>Seoul Routine — korean skincare</p>
+</footer>
 
 <script src="js/cart.js"></script>
 
