@@ -36,8 +36,8 @@ header {
     display: inline-block;
     margin: 5px 0 0;
     padding-bottom: 5px;
-    border-bottom: 3px solid #edbdb5;
-    color: #9e6b50;
+    border-bottom: 3px solid #486447;
+    color: #454545;
     font-size: 14px;
 }
 
@@ -51,11 +51,11 @@ header a {
 }
 
 header a:hover {
-    background-color: #385137;
+    background-color: #5f8a5b;
 }
 
-header a:hover {
-    background-color: #d98b74;
+.catalog {
+    margin-top: 10px;
 }
 
 .product-list {
@@ -70,7 +70,7 @@ header a:hover {
     padding: 16px;
     background-color: #fffdfc;
     border-radius: 10px;
-    border-bottom: 4px solid #edbdb5;
+    border-bottom: 4px solid #454545;
 }
 
 .product-card img {
@@ -100,7 +100,7 @@ header a:hover {
 
 .product-price {
     margin: 0;
-    color: #a94f3d;
+    color: #454545;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -119,11 +119,7 @@ header a:hover {
 }
 
 .product-card button:hover {
-    background-color: #385137;
-}
-
-.product-card button:hover {
-    background-color: #d98b74;
+    background-color: #5f8a5b;
 }
 
 .cart {
@@ -132,7 +128,7 @@ header a:hover {
     padding: 28px;
     background-color: #fffdfc;
     border-radius: 10px;
-    border-top: 4px solid #edbdb5;
+    border-top: 4px solid #454545;
 }
 
 .cart h2 {
@@ -145,19 +141,19 @@ header a:hover {
 }
 
 .cart-items > p {
-    color: #9e6b50;
+    color: #666666;
 }
 
 .cart-item {
     display: flex;
     gap: 20px;
     padding: 20px 0;
-    border-bottom: 1px solid #edbdb5;
+    border-bottom: 1px solid #cccccc;
 }
 
 .cart-item img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     background-color: #f4f5f7;
     border-radius: 6px;
@@ -173,7 +169,7 @@ header a:hover {
 }
 
 .cart-item-info p {
-    color: #9e6b50;
+    color: #454545;
     font-weight: bold;
 }
 
@@ -189,29 +185,27 @@ header a:hover {
     height: 34px;
     border: none;
     border-radius: 5px;
-    background-color: #edbdb5;
-    color: #352f2c;
+    background-color: #486447;
+    color: #ffffff;
     font-size: 16px;
     cursor: pointer;
 }
 
 .quantity button:hover {
-    background-color: #d98b74;
-    color: white;
+    background-color: #5f8a5b;
 }
 
 .remove {
     padding: 8px 14px;
     border: none;
     border-radius: 5px;
-    background-color: #edbdb5;
-    color: #352f2c;
+    background-color: #486447;
+    color: #ffffff;
     cursor: pointer;
 }
 
 .remove:hover {
-    background-color: #d98b74;
-    color: white;
+    background-color: #5f8a5b;
 }
 
 .cart-total {
@@ -222,7 +216,7 @@ header a:hover {
 }
 
 .cart-total span {
-    color: #9e6b50;
+    color: #454545;
 }
 
 .checkout-button {
@@ -231,15 +225,15 @@ header a:hover {
     margin-top: 18px;
     padding: 13px;
     border-radius: 6px;
-    background-color: #637d61;
-    color: white;
+    background-color: #486447;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .checkout-button:hover {
-    background-color: #d98b74;
+    background-color: #5f8a5b;
 }
 
 .checkout {
@@ -248,7 +242,7 @@ header a:hover {
     padding: 28px;
     background-color: #fffdfc;
     border-radius: 10px;
-    border-top: 4px solid #edbdb5;
+    border-top: 4px solid #454545;
 }
 
 .checkout h2 {
@@ -272,7 +266,7 @@ header a:hover {
 
 #checkout-form input {
     padding: 12px;
-    border: 1px solid #edbdb5;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     background-color: white;
     color: #352f2c;
@@ -280,7 +274,7 @@ header a:hover {
 }
 
 #checkout-form input:focus {
-    outline: 2px solid #637d61;
+    outline: 2px solid #486447;
     border-color: transparent;
 }
 
@@ -288,28 +282,28 @@ header a:hover {
     padding: 13px;
     border: none;
     border-radius: 6px;
-    background-color: #637d61;
-    color: white;
+    background-color: #486447;
+    color: #ffffff;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .create-order-button:hover {
-    background-color: #d98b74;
+    background-color: #5f8a5b;
 }
 
 .order-message {
     font-size: 18px;
     font-weight: bold;
-    color: #637d61;
+    color: #486447;
 }
 
 footer {
     margin-top: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: #9e6b50;
+    color: #666666;
     text-align: center;
     font-size: 14px;
 }
@@ -347,10 +341,6 @@ footer {
         text-align: center;
     }
 
-    .catalog h2 {
-        font-size: 10px;
-    }
-
     .product-list {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -374,7 +364,7 @@ footer {
     }
 
     .product-price {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .product-card button {
